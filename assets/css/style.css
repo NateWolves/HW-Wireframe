@@ -1,0 +1,106 @@
+body {
+    background-image: url("../images/circuit.png");
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding:10px;
+}
+
+
+.Navbar {
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    background-color:gray;
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
+    top: 0%;
+    left: 0%;
+}
+
+h1{
+    background-color:#4aaaa5;
+    float: left;
+    font-family: 'Georgia', Times,  'Times New Roman', Times, serif;
+    margin-left:80px;
+
+}
+h2 {
+    color: #4aaaa5;
+    font-size: 20px;
+    border-bottom: gray 10px;
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
+    border-bottom: #777;
+}
+
+.Navbar a {
+    float:right;
+    text-align: center;
+    display: inline-block;
+    padding: 35px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+}
+
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:-50px;
+    margin-top:20px;
+}
+.wrapper {
+    margin-top:20px;
+}
+.Mainbody {
+    height:auto;
+    padding: 40px;
+    margin: 20px 20px 20px 20px;
+    background-color:#ffffff;
+}
+
+#Profilepic {
+    float:left;
+    overflow: auto;
+    width:350px;
+    height: 200px;
+    Margin: 10px 10px 10px 10px
+}
+/*Sticky footer, creates a div as high as footer*/
+.push {
+    height: 50px;
+}
+
+/*Sticky footer*/
+.footer {
+    background-color: darkslategray;
+    Height:50px;
+    width:100%;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    color: white;
+    font-size:8px;
+    padding: 10px;
+}
+
+/*Portfolio sections image gallery */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    position: absolute;
+    width:180px;
+    background-color:#4aaaa5;
+    padding: 15px;
+    text-align: center;
+    color: white;
