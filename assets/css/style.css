@@ -1,7 +1,8 @@
 body {
     background-image: url("../images/circuit.png");
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    padding:10px;
+    margin-left: 0%;
+    color:#777777;
 }
 
 
@@ -9,34 +10,64 @@ body {
     position: fixed;
     width: 100%;
     height: 85px;
-    background-color:gray;
+    background-color:#ffffff;
     font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
     top: 0%;
     left: 0%;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+a {
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-right-width: 2px;
+
+}
+a:hover {
+    background-color: #4aaaa5;
+}
+a:visited {
+    color:#cccccc;
+}
+a:active {
+    background-color:#666666;
+}
+
+.Navbar a {
+    color:#777777;
+    float: right;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-right-style: solid gray;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    margin-top:32px;
+}
+
+#bar {
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
     background-color:#4aaaa5;
-    float: left;
     font-family: 'Georgia', Times,  'Times New Roman', Times, serif;
-    margin-left:80px;
-
+    float: left;
+    color:#ffffff;
+    margin: 0px 0px 0px 20px;
+    font-weight: bold;
+    padding: 24px 20px 24px 20px;
 }
+
 h2 {
     color: #4aaaa5;
+    font-weight: bold;
     font-size: 20px;
-    border-bottom: gray 10px;
+    padding-bottom:20px;
+    border-bottom:#cccccc 5px;
     font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
-    border-bottom: #777;
-}
-
-.Navbar a {
-    float:right;
-    text-align: center;
-    display: inline-block;
-    padding: 35px 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:black;
+    border-bottom-style: solid;
 }
 
 .wrapper::after {
@@ -46,14 +77,22 @@ h2 {
     margin-bottom:-50px;
     margin-top:20px;
 }
+
 .wrapper {
-    margin-top:20px;
+    width:960px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .Mainbody {
     height:auto;
-    padding: 40px;
-    margin: 20px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
+    margin: 85px 20px 20px 20px;
     background-color:#ffffff;
+    content: "";
+    display: table;
+    clear: both;
+    width: 960px;
 }
 
 #Profilepic {
@@ -61,7 +100,7 @@ h2 {
     overflow: auto;
     width:350px;
     height: 200px;
-    Margin: 10px 10px 10px 10px
+    Margin: 0px 20px 10px 10px
 }
 /*Sticky footer, creates a div as high as footer*/
 .push {
@@ -70,37 +109,67 @@ h2 {
 
 /*Sticky footer*/
 .footer {
-    background-color: darkslategray;
+    background-color:#666666;
+    color:lightgray;
     Height:50px;
     width:100%;
     border-top: 8px solid #4aaaa5;
     text-align: center;
-    color: white;
     font-size:8px;
     padding: 10px;
+    line-height: 50px;
 }
 
 /*Portfolio sections image gallery */
 div.gallery {
-    margin: 5px;
+    position: relative;
+    margin:20px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 5px solid #777;
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
+    position: relative;
+
 }
 
 div.desc {
     position: absolute;
-    width:180px;
     background-color:#4aaaa5;
     padding: 15px;
     text-align: center;
     color: white;
+    width: 150px;
+    bottom: 10px;
+}
+/*Styling for Contact Sheet */
+
+input[type=text] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px 8px;
+    font-family: sans-serif;
+}
+textarea {
+    margin:8px 0;
+    font-family: sans-serif;
+    padding: 8px 8px;
+    width: 100%;
+}
+input[type=submit] {
+    width:120px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #4aaaa5;
+    color: white;
+    margin:4px 2px;
+    padding:16px 32px;
+    border: none;
+}
